@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1727263842 source:c:\users\berika\desktop\c-datastructure\struct2(icicestruct)\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1727266263 source:c:\users\berika\desktop\c-datastructure\struct2(icicestruct)\struct2.2.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
