@@ -1,0 +1,71 @@
+void Bastansilme(int sayi){
+	struct node *index = (struct node*)malloc(sizeof(struct node));
+	temp=head;
+	tail = head;
+    	if(head==NULL){
+        	printf("Link list is empty!");
+		return ;
+    	}
+	while(tail->next!= head){
+		tail = tail->next;
+	}
+	if(head->next==head){
+		
+		free(head);
+		head=NULL;
+	}
+	else{
+		head=head->next;
+		tail->next =head;
+		free(temp);
+	}
+
+
+}
+
+void sondanSilme(int sayi){
+	temp=head;
+	prev = NULL;
+	if(head==NULL){
+		printf("LL is empty!");
+		return ;
+	
+	}
+	if(head->next==head){
+		
+		free(head);
+		head=NULL;
+	}
+	else{
+		while(temp->next !=head){
+			prev=temp;
+			temp = temp->next;
+		}
+		prev->next =head;
+		free(temp);
+	}
+	
+	
+}
+
+void aradanSilme(int sayi){
+	prev=head;
+	temp = head->next;
+	if(head==NULL){
+		printf("LL is empty!");
+		return ;
+	
+	}
+	while(temp !=head){
+		if(temp->data ==sayi){
+			prev->next = temp->next;
+			free(temp);
+			return;
+		}
+		prev = temp;
+		temp = temp->next;
+	
+	}
+	printf("Eleman bulunamadi!");
+
+}
