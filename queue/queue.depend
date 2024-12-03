@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1729163588 source:c:\users\berika\desktop\c-datastructure\queue\main.c
+	<stdio.h>
+	<stdlib.h>
+
